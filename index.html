@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>民国校服换装馆 · 1920s–1930s 中西方儿童校服图鉴</title>
+<style>
+:root{
+  --paper:#f7f0e1;
+  --paper-2:#fdf8ee;
+  --ink:#3b3327;
+  --ink-2:#6f6350;
+  --red:#a5382c;
+  --blue:#33506e;
+  --gold:#b8934a;
+  --line:#d8c9a8;
+  --line-soft:#e6dcc4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:"Songti SC","STSong","Noto Serif SC","Source Han Serif SC",serif;
+  background:var(--paper);
+  background-image:radial-gradient(circle at 20% 10%,#fdf8ec 0,transparent 55%),radial-gradient(circle at 85% 90%,#f3e9d2 0,transparent 50%);
+  color:var(--ink);
+  min-height:100vh;
+  line-height:1.6;
+}
+.wrap{max-width:1200px;margin:0 auto;padding:22px 18px 40px}
+
+/* ---------- 头部 ---------- */
+.site-header{
+  display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;
+  gap:10px;padding-bottom:14px;margin-bottom:18px;
+  border-bottom:3px double var(--line);
+}
+.title-block h1{
+  font-size:34px;letter-spacing:.35em;font-weight:700;
+  color:var(--ink);
+}
+.title-block h1::first-letter{color:var(--red)}
+.subtitle{margin-top:4px;font-size:14px;letter-spacing:.18em;color:var(--ink-2)}
+.header-meta{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink-2)}
+.seal{
+  display:inline-block;padding:3px 8px;border:1.5px solid var(--red);color:var(--red);
+  border-radius:4px;font-size:12px;letter-spacing:.25em;transform:rotate(-3deg);
+  background:#fdf3ec;
+}
+
+/* ---------- 布局 ---------- */
+.layout{display:grid;grid-template-columns:430px minmax(0,1fr);gap:26px;align-items:start}
+@media (max-width:960px){.layout{grid-template-columns:1fr}}
+
+/* ---------- 舞台 ---------- */
+.stage-col{position:sticky;top:16px}
+@media (max-width:960px){.stage-col{position:static}}
+.stage-frame{
+  position:relative;border:10px solid #efe3c8;border-radius:10px;
+  background:linear-gradient(180deg,#fdf9ef 0%,#f6eeda 78%,#efe1c2 100%);
+  box-shadow:0 10px 30px rgba(90,70,30,.14),inset 0 0 0 2px #fffdf6,inset 0 0 0 5px var(--line);
+  overflow:hidden;
+}
+.stage-deco{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;
+}
+.deco-char{
+  font-size:330px;line-height:1;color:rgba(165,56,44,.07);
+  font-weight:700;user-select:none;transform:translateY(-4%);
+}
+#stage{position:relative;display:block;width:100%;height:auto}
+.stage-caption{
+  position:relative;text-align:center;font-size:13px;color:var(--ink-2);
+  padding:6px 10px 10px;letter-spacing:.08em;
+}
+.model-switch{display:flex;gap:10px;margin-top:14px}
+.model-switch button,.actions button,.tabs button,.filters button{
+  font-family:inherit;cursor:pointer;border-radius:6px;letter-spacing:.14em;
+  transition:all .18s ease;background:var(--paper-2);color:var(--ink);
+}
+.model-switch button{
+  flex:1;padding:10px 0;font-size:15px;border:1.5px solid var(--line);
+}
+.model-switch button.active{
+  background:var(--blue);border-color:var(--blue);color:#fdf8ec;
+  box-shadow:0 3px 10px rgba(51,80,110,.3);
+}
+.model-switch button:hover:not(.active){border-color:var(--blue);color:var(--blue)}
+.actions{display:flex;gap:10px;margin-top:12px}
+.actions button{
+  flex:1;padding:9px 0;font-size:14px;border:1.5px solid var(--line);
+}
+.actions button.primary{background:var(--red);border-color:var(--red);color:#fdf8ec}
+.actions button.primary:hover{filter:brightness(1.08)}
+.actions button:hover:not(.primary){border-color:var(--red);color:var(--red)}
+.stage-tip{margin-top:10px;font-size:12px;color:var(--ink-2);opacity:.85}
+
+/* ---------- 衣橱 ---------- */
+.wardrobe-col{
+  background:var(--paper-2);border:1.5px solid var(--line);border-radius:10px;
+  box-shadow:0 6px 20px rgba(90,70,30,.08);
+  padding:16px 16px 18px;
+}
+.tabs{display:flex;gap:8px;border-bottom:2px solid var(--line-soft);padding-bottom:12px}
+.tabs button{
+  flex:1;padding:10px 0;font-size:16px;border:1.5px solid transparent;background:transparent;
+}
+.tabs button.active{
+  color:var(--red);border-color:var(--line);background:#fdf3ec;font-weight:700;
+}
+.tabs button:hover{color:var(--red)}
+.filters{display:flex;gap:8px;margin:12px 0 14px}
+.filters button{
+  padding:5px 16px;font-size:13px;border:1px solid var(--line);color:var(--ink-2);
+}
+.filters button.active{background:var(--ink);border-color:var(--ink);color:var(--paper-2)}
+
+.grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;
+  max-height:560px;overflow-y:auto;padding:2px;
+}
+@media (max-width:420px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cell{
+  border:1.5px solid var(--line-soft);border-radius:8px;background:#fffdf6;
+  padding:6px 4px 7px;cursor:pointer;text-align:center;position:relative;
+  transition:all .15s ease;
+}
+.cell:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:0 4px 12px rgba(90,70,30,.12)}
+.cell.equipped{border-color:var(--red);box-shadow:0 0 0 2px rgba(165,56,44,.18)}
+.cell.equipped::after{
+  content:"着";position:absolute;top:4px;right:4px;width:20px;height:20px;line-height:20px;
+  background:var(--red);color:#fff;border-radius:50%;font-size:12px;
+}
+.thumb{
+  width:100%;aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,#fbf5e6,#f4ead2);border-radius:6px;overflow:hidden;
+}
+.thumb svg{width:100%;height:100%}
+.cell-name{font-size:12px;margin-top:5px;color:var(--ink);letter-spacing:.02em}
+.cell-tag{font-size:10px;color:var(--ink-2);opacity:.8}
+
+/* ---------- 信息卡 ---------- */
+.info{
+  margin-top:16px;border:1.5px solid var(--line);border-left:5px solid var(--red);
+  border-radius:8px;background:#fdf8ec;padding:14px 16px;min-height:120px;
+}
+.info h2{font-size:17px;letter-spacing:.1em;margin-bottom:6px}
+.info .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.info .tag{
+  font-size:11px;padding:2px 9px;border-radius:20px;letter-spacing:.06em;
+  background:#f0e6cd;color:var(--ink-2);border:1px solid var(--line);
+}
+.info .tag.region{background:#e9eef5;color:var(--blue);border-color:#c8d4e4}
+.info .note{font-size:13.5px;color:var(--ink);line-height:1.75}
+
+/* ---------- 页脚 ---------- */
+.site-footer{
+  margin-top:26px;padding-top:14px;border-top:3px double var(--line);
+  font-size:12px;color:var(--ink-2);
+}
+
+/* 滚动条 */
+.grid::-webkit-scrollbar{width:8px}
+.grid::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+.grid::-webkit-scrollbar-track{background:transparent}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site-header">
+    <div class="title-block">
+      <h1>民国校服换装馆</h1>
+      <p class="subtitle">1920s–1930s · 中西方儿童校服图鉴与自由搭配</p>
+    </div>
+    <div class="header-meta">
+      <span class="seal">史实考据</span>
+      <span id="countMeta">衣服 32 · 发型 16 · 鞋子 9</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="stage-col">
+      <div class="stage-frame">
+        <div class="stage-deco">
+          <span class="deco-char">童</span>
+        </div>
+        <svg id="stage" viewBox="0 0 420 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="换装模特"></svg>
+        <div class="stage-caption" id="stageCaption">点击右侧衣橱，开始搭配</div>
+      </div>
+      <div class="model-switch" role="group" aria-label="模特选择">
+        <button id="btnBoy" class="active" type="button">男孩模特</button>
+        <button id="btnGirl" type="button">女孩模特</button>
+      </div>
+      <div class="actions">
+        <button id="btnRandom" type="button" class="primary">随机搭配</button>
+        <button id="btnReset" type="button">重置</button>
+        <button id="btnSave" type="button">保存图片</button>
+      </div>
+      <p class="stage-tip">提示：三栏单品（发型 / 衣服 / 鞋子）均可自由混搭，男女款式互通。</p>
+    </section>
+
+    <section class="wardrobe-col">
+      <nav class="tabs" role="tablist">
+        <button class="active" data-cat="hair" role="tab">发型</button>
+        <button data-cat="outfit" role="tab">衣服</button>
+        <button data-cat="shoe" role="tab">鞋子</button>
+      </nav>
+      <div class="filters" id="filters">
+        <button class="active" data-g="all">全部</button>
+        <button data-g="boy">男孩</button>
+        <button data-g="girl">女孩</button>
+      </div>
+      <div class="grid" id="grid"></div>
+      <aside class="info" id="info">
+        <h2>衣橱说明</h2>
+        <p>本馆收录 1920–1930 年代中西方儿童校服样式 32 套、发型 16 种、鞋履 9 款，共 57 件单品。款式考据自民国老照片、校史档案与同时期西方童装文献，点击单品即可查看史实小注。</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>史料参考：《学校制服规程令》(1911)、1929年《服制条例》、中国童子军档案、民国老照片，以及英国校服史（gymslip / pinafore）与 1920 年代欧美童装邮购目录。</p>
+  </footer>
+</div>
+
+<script>
+/* ============================================================
+   衣柜数据 · 1920s–1930s 中西方儿童校服
+   坐标系：viewBox 0 0 420 680
+   人形关键点：头 (210,112) rx45 ry51；肩 y185；腰 y300-316；
+   膝 y480；踝 y590；脚 y560-600
+   ============================================================ */
+(function () {
+  var SKIN = '#f4cba4', SKIN_D = '#e3ac82';
+
+  /* ---------- 基础人形 ---------- */
+  var BODY =
+    '<path d="M193 316 L190 588" stroke="' + SKIN + '" stroke-width="26" stroke-linecap="round" fill="none"/>' +
+    '<path d="M227 316 L230 588" stroke="' + SKIN + '" stroke-width="26" stroke-linecap="round" fill="none"/>' +
+    '<path d="M180 208 C162 250 152 320 149 384" stroke="' + SKIN + '" stroke-width="17" fill="none" stroke-linecap="round"/>' +
+    '<path d="M240 208 C258 250 268 320 271 384" stroke="' + SKIN + '" stroke-width="17" fill="none" stroke-linecap="round"/>' +
+    '<circle cx="149" cy="392" r="9.5" fill="' + SKIN + '"/>' +
+    '<circle cx="271" cy="392" r="9.5" fill="' + SKIN + '"/>' +
+    '<rect x="196" y="140" width="28" height="50" rx="12" fill="' + SKIN_D + '"/>' +
+    '<path d="M164 202 Q164 188 210 185 Q256 188 256 202 L250 316 Q210 330 170 316 Z" fill="' + SKIN + '"/>' +
+    '<ellipse cx="210" cy="112" rx="45" ry="51" fill="' + SKIN + '"/>' +
+    '<ellipse cx="164" cy="116" rx="7" ry="11" fill="' + SKIN + '"/>' +
+    '<ellipse cx="256" cy="116" rx="7" ry="11" fill="' + SKIN + '"/>';
+
+  /* ---------- 脸部模板（男女各一） ---------- */
+  var FACE = {
+    girl:
+      '<path d="M185 97 Q193 92 201 96" stroke="#4a3423" stroke-width="2.4" fill="none" stroke-linecap="round"/>' +
+      '<path d="M219 96 Q227 92 235 97" stroke="#4a3423" stroke-width="2.4" fill="none" stroke-linecap="round"/>' +
+      '<ellipse cx="193" cy="110" rx="4.2" ry="5.6" fill="#3a2a1c"/>' +
+      '<ellipse cx="227" cy="110" rx="4.2" ry="5.6" fill="#3a2a1c"/>' +
+      '<circle cx="194.6" cy="108" r="1.3" fill="#fff"/>' +
+      '<circle cx="228.6" cy="108" r="1.3" fill="#fff"/>' +
+      '<path d="M210 116 Q207 125 212 127" stroke="' + SKIN_D + '" stroke-width="2" fill="none" stroke-linecap="round"/>' +
+      '<path d="M202 137 Q210 143 218 137" stroke="#c4685c" stroke-width="2.6" fill="none" stroke-linecap="round"/>' +
+      '<ellipse cx="185" cy="124" rx="7" ry="4" fill="#f0a08a" opacity="0.5"/>' +
+      '<ellipse cx="235" cy="124" rx="7" ry="4" fill="#f0a08a" opacity="0.5"/>',
+    boy:
+      '<path d="M185 96 L201 99" stroke="#3a2a1c" stroke-width="2.6" stroke-linecap="round"/>' +
+      '<path d="M219 99 L235 96" stroke="#3a2a1c" stroke-width="2.6" stroke-linecap="round"/>' +
+      '<ellipse cx="193" cy="111" rx="4" ry="5.2" fill="#3a2a1c"/>' +
+      '<ellipse cx="227" cy="111" rx="4" ry="5.2" fill="#3a2a1c"/>' +
+      '<circle cx="194.5" cy="109" r="1.2" fill="#fff"/>' +
+      '<circle cx="228.5" cy="109" r="1.2" fill="#fff"/>' +
+      '<path d="M210 117 Q207 125 212 127" stroke="' + SKIN_D + '" stroke-width="2" fill="none" stroke-linecap="round"/>' +
+      '<path d="M203 138 Q210 142 217 138" stroke="#c4685c" stroke-width="2.4" fill="none" stroke-linecap="round"/>'
+  };
+
+  /* ---------- 缩略图底衬人形 ---------- */
+  var GHOST =
+    '<g fill="#e7dcc8">' +
+    '<rect x="180" y="310" width="24" height="288" rx="12"/>' +
+    '<rect x="216" y="310" width="24" height="288" rx="12"/>' +
+    '<rect x="141" y="205" width="17" height="176" rx="8.5"/>' +
+    '<rect x="262" y="205" width="17" height="176" rx="8.5"/>' +
+    '<path d="M164 202 Q164 188 210 185 Q256 188 256 202 L250 316 Q210 330 170 316 Z"/>' +
+    '<ellipse cx="210" cy="112" rx="45" ry="51"/>' +
+    '<circle cx="149" cy="392" r="9"/><circle cx="271" cy="392" r="9"/>' +
+    '</g>';
+
+  /* ---------- 服装部件 ---------- */
+  function sl(c, w) { w = w || 19; return '<path d="M180 208 C162 250 152 320 149 384" stroke="' + c + '" stroke-width="' + w + '" fill="none" stroke-linecap="round"/>'; }
+  function sr(c, w) { w = w || 19; return '<path d="M240 208 C258 250 268 320 271 384" stroke="' + c + '" stroke-width="' + w + '" fill="none" stroke-linecap="round"/>'; }
+  function ssl(c) { return '<path d="M180 208 C170 222 163 240 159 260" stroke="' + c + '" stroke-width="20" fill="none" stroke-linecap="round"/>'; }
+  function ssr(c) { return '<path d="M240 208 C250 222 257 240 261 260" stroke="' + c + '" stroke-width="20" fill="none" stroke-linecap="round"/>'; }
+  function top(c) { return '<path d="M164 202 Q164 188 210 185 Q256 188 256 202 L250 316 Q210 330 170 316 Z" fill="' + c + '"/>'; }
+  function skirtK(c) { return '<path d="M172 300 L248 300 L266 458 Q210 476 154 458 Z" fill="' + c + '"/>'; }
+  function skirtM(c) { return '<path d="M172 300 L248 300 L270 508 Q210 526 150 508 Z" fill="' + c + '"/>'; }
+  function skirtL(c) { return '<path d="M172 300 L248 300 L274 564 Q210 586 146 564 Z" fill="' + c + '"/>'; }
+  function skirtS(c) { return '<path d="M172 300 L248 300 L258 420 Q210 436 162 420 Z" fill="' + c + '"/>'; }
+  function pantL(c, len, cuff) { len = len || 586; var s = '<path d="M172 300 L206 300 L205 ' + len + ' Q196 ' + (len + 7) + ' 185 ' + len + ' L174 ' + len + ' Z" fill="' + c + '"/>'; if (cuff) { s += '<path d="M175 ' + (len - 7) + ' L205 ' + (len - 7) + '" stroke="' + cuff + '" stroke-width="3"/>'; } return s; }
+  function pantR(c, len, cuff) { len = len || 586; var s = '<path d="M248 300 L214 300 L215 ' + len + ' Q224 ' + (len + 7) + ' 235 ' + len + ' L246 ' + len + ' Z" fill="' + c + '"/>'; if (cuff) { s += '<path d="M215 ' + (len - 7) + ' L245 ' + (len - 7) + '" stroke="' + cuff + '" stroke-width="3"/>'; } return s; }
+  function shorts(c) { return '<path d="M168 300 L210 300 L207 436 Q190 446 173 436 Z" fill="' + c + '"/><path d="M252 300 L210 300 L213 436 Q230 446 247 436 Z" fill="' + c + '"/>'; }
+  function kneesocks(c) { return '<path d="M192 420 L190 584" stroke="' + c + '" stroke-width="26" stroke-linecap="round" fill="none"/><path d="M228 420 L230 584" stroke="' + c + '" stroke-width="26" stroke-linecap="round" fill="none"/>'; }
+  function pleats(c, hemY) { var s = ''; for (var x = 182; x <= 238; x += 14) { s += '<path d="M' + x + ' 306 L' + (x + (x < 210 ? -8 : 8)) + ' ' + hemY + '" stroke="' + c + '" stroke-width="1.6" opacity="0.45"/>'; } return s; }
+  function mandarin(c, line) { return '<path d="M193 186 Q210 197 227 186 L229 172 Q210 183 191 172 Z" fill="' + c + '"/><path d="M193 186 Q210 197 227 186" fill="none" stroke="' + line + '" stroke-width="1.6"/>'; }
+  function shirtCollar(c) { return '<path d="M196 188 L210 206 L224 188 L218 182 L210 194 L202 182 Z" fill="' + c + '"/>'; }
+  function sailorBack(c) { return '<path d="M178 188 L242 188 L252 242 L168 242 Z" fill="' + c + '"/>'; }
+  function sailorFront(c, line) { return '<path d="M196 188 L210 218 L224 188 L233 197 L210 234 L187 197 Z" fill="' + c + '" stroke="' + line + '" stroke-width="2"/>' +
+    '<path d="M199 200 L221 200 M197 210 L223 210 M195 220 L225 220" stroke="' + line + '" stroke-width="2"/>'; }
+  function peterPan(c) { return '<path d="M186 184 Q210 176 234 184 Q242 196 234 206 Q210 194 186 206 Q178 196 186 184 Z" fill="' + c + '"/>' +
+    '<path d="M186 184 Q210 176 234 184" fill="none" stroke="rgba(0,0,0,.12)" stroke-width="1.5"/>'; }
+  function tie(c, stripe) { var s = '<path d="M205 194 L215 194 L218 204 L202 204 Z" fill="' + c + '"/>' +
+    '<path d="M202 204 L218 204 L223 262 L210 270 L197 262 Z" fill="' + c + '"/>'; if (stripe) { s += '<path d="M203 214 L217 212 M202 228 L218 226 M203 242 L217 240" stroke="' + stripe + '" stroke-width="3"/>'; } return s; }
+  function necker(c, c2) { return '<path d="M191 188 L229 188 L210 244 Z" fill="' + c + '"/><path d="M191 188 L210 244 L229 188" fill="none" stroke="' + c2 + '" stroke-width="2"/>'; }
+  function capScout(c, dark) { return '<path d="M178 82 Q210 62 242 82 L238 94 Q210 76 182 94 Z" fill="' + c + '"/>' +
+    '<path d="M178 82 Q210 76 242 82 L238 94 Q210 86 182 94 Z" fill="' + dark + '"/><circle cx="210" cy="72" r="6" fill="#d8b25e"/>'; }
+  function capPeaked(c, dark, badge) { var s = '<path d="M180 88 Q180 58 210 58 Q240 58 240 88 Z" fill="' + c + '"/>' +
+    '<ellipse cx="210" cy="90" rx="35" ry="8" fill="' + dark + '"/>'; if (badge) { s += '<circle cx="210" cy="72" r="7" fill="' + badge + '"/>'; } return s; }
+  function capStudent() { return capPeaked('#2b2f36', '#1d2126', '#c9a86a'); }
+  function capFlat(c, dark) { return '<path d="M182 84 Q182 60 210 60 Q238 60 238 84 Q238 90 230 90 L190 90 Q182 90 182 84 Z" fill="' + c + '"/>' +
+    '<path d="M182 84 Q210 96 238 84 L238 90 Q210 102 182 90 Z" fill="' + dark + '"/>'; }
+  function capStraw() { return '<ellipse cx="210" cy="86" rx="42" ry="12" fill="#d8bc7a"/>' +
+    '<path d="M186 86 Q184 58 210 56 Q236 58 234 86 Q210 74 186 86 Z" fill="#e6cd8e"/>' +
+    '<path d="M186 80 Q210 88 234 80" stroke="#a8894e" stroke-width="3" fill="none"/>'; }
+  function beret(c) { return '<ellipse cx="210" cy="74" rx="40" ry="21" fill="' + c + '"/>' +
+    '<ellipse cx="210" cy="70" rx="40" ry="18" fill="' + c + '"/><circle cx="210" cy="54" r="4" fill="' + c + '"/>'; }
+  function topHat() { return '<rect x="184" y="30" width="52" height="56" fill="#26262a"/>' +
+    '<ellipse cx="210" cy="86" rx="42" ry="9" fill="#26262a"/><rect x="184" y="66" width="52" height="8" fill="#3a3a40"/>'; }
+  function trumpetL(c, trim) { return '<path d="M170 202 Q152 212 146 240 L134 302 Q132 318 144 316 L154 314 Q162 312 160 300 L168 244 Q174 216 184 208 Z" fill="' + c + '"/>' +
+    '<path d="M134 302 Q132 318 144 316 L154 314" fill="none" stroke="' + trim + '" stroke-width="3"/>'; }
+  function trumpetR(c, trim) { return '<path d="M250 202 Q268 212 274 240 L286 302 Q288 318 276 316 L266 314 Q258 312 260 300 L252 244 Q246 216 236 208 Z" fill="' + c + '"/>' +
+    '<path d="M286 302 Q288 318 276 316 L266 314" fill="none" stroke="' + trim + '" stroke-width="3"/>'; }
+  var FOOT_L = 'M204 570 Q207 560 194 560 L182 560 Q168 560 168 573 Q168 590 183 595 Q199 599 204 589 Q206 580 204 570 Z';
+  var FOOT_R = 'M216 570 Q213 560 226 560 L238 560 Q250 560 250 573 Q250 590 235 595 Q219 599 214 589 Q212 580 216 570 Z';
+  function bootL(c) { return '<path d="M176 458 Q174 520 177 566 L204 566 Q206 516 204 458 Z" fill="' + c + '"/>' +
+    '<path d="' + FOOT_L + '" fill="' + c + '"/><path d="M168 588 Q183 595 204 588" stroke="#1a1a1e" stroke-width="4" fill="none"/>'; }
+  function bootR(c) { return '<path d="M216 458 Q214 520 217 566 L244 566 Q246 516 244 458 Z" fill="' + c + '"/>' +
+    '<path d="' + FOOT_R + '" fill="' + c + '"/><path d="M214 588 Q229 595 250 588" stroke="#1a1a1e" stroke-width="4" fill="none"/>'; }
+  function sole(c) { return '<path d="M168 588 Q183 595 204 588" stroke="' + c + '" stroke-width="3" fill="none"/>' +
+    '<path d="M214 588 Q229 595 250 588" stroke="' + c + '" stroke-width="3" fill="none"/>'; }
+  function laces(c) { return '<path d="M182 562 L192 568 M192 562 L182 568 M186 570 L196 576 M196 570 L186 576" stroke="' + c + '" stroke-width="2" fill="none"/>' +
+    '<path d="M222 562 L232 568 M232 562 L222 568 M226 570 L236 576 M236 570 L226 576" stroke="' + c + '" stroke-width="2" fill="none"/>'; }
+
+  /* ============================================================
+     衣服 · 32 套
+     ============================================================ */
+  var OUTFITS = [
+    /* ---- 中国 · 男童 ---- */
+    {
+      id: 'cn-scout-summer', name: '童子军夏装', era: '1930年代', region: '中国', gender: 'boy',
+      note: '1930年代中国中小学普遍设童子军训练课，1936年教育部更规定初中制服为童子军装。黄色斜纹布制服、青色领巾、船形帽与长腰白袜是当年最典型的小学生形象，1930年首次全国总检阅即有三千余名童子军参加。',
+      front: top('#d9a84e') + ssl('#d9a84e') + ssr('#d9a84e') +
+        '<path d="M196 190 L210 206 L224 190 L224 184 L196 184 Z" fill="#e8dcc0"/>' +
+        necker('#2e5a7d', '#f5f2ea') +
+        '<rect x="168" y="304" width="84" height="12" fill="#5a4632"/><circle cx="210" cy="310" r="5" fill="#c9a86a"/>' +
+        shorts('#d9a84e') + kneesocks('#f0ead8') +
+        '<rect x="136" y="246" width="16" height="11" rx="2" fill="#e8e0cc"/>' +
+        capScout('#d9a84e', '#b8934a')
+    },
+    {
+      id: 'cn-scout-winter', name: '童子军冬装', era: '1930年代', region: '中国', gender: 'boy',
+      note: '秋冬童子军改着长袖长裤，腰束铸有童子军军徽的铜扣皮带，男生多戴大盖帽。日常则穿草绿色童子军服，脚登黑皮鞋，操课时持童子军棍、背军用水壶。',
+      front: top('#c9a85e') + sl('#c9a85e') + sr('#c9a85e') +
+        '<path d="M196 190 L210 206 L224 190 L224 184 L196 184 Z" fill="#e8dcc0"/>' +
+        necker('#2e5a7d', '#f5f2ea') +
+        '<rect x="168" y="304" width="84" height="12" fill="#5a4632"/><circle cx="210" cy="310" r="5" fill="#c9a86a"/>' +
+        pantL('#c9a85e', 586, '#8a6f3a') + pantR('#c9a85e', 586, '#8a6f3a') +
+        capPeaked('#c9a85e', '#8a6f3a', '#d8b25e')
+    },
+    {
+      id: 'cn-student-zhongshan', name: '学生装（中山装学生版）', era: '1928年后', region: '中国', gender: 'boy',
+      note: '1928年后中山装盛行，成为男学生与知识分子的标准装束。立领、四袋、暗扣皆有其象征说法（礼义廉耻、五权分立、三民主义）。中小学生所着多为单色毛哔叽或阴丹士林布制服。',
+      front: top('#5b6b7c') + sl('#5b6b7c') + sr('#5b6b7c') +
+        mandarin('#4a5a6a', '#3a4856') +
+        '<rect x="178" y="238" width="24" height="15" rx="2" fill="#4a5a6a"/><rect x="222" y="238" width="24" height="15" rx="2" fill="#4a5a6a"/>' +
+        '<rect x="178" y="268" width="24" height="15" rx="2" fill="#4a5a6a"/><rect x="222" y="268" width="24" height="15" rx="2" fill="#4a5a6a"/>' +
+        '<circle cx="210" cy="216" r="2" fill="#3a4856"/><circle cx="210" cy="234" r="2" fill="#3a4856"/><circle cx="210" cy="252" r="2" fill="#3a4856"/><circle cx="210" cy="270" r="2" fill="#3a4856"/><circle cx="210" cy="288" r="2" fill="#3a4856"/>' +
+        pantL('#5b6b7c') + pantR('#5b6b7c')
+    },
+    {
+      id: 'cn-changshan-magua', name: '长衫马褂', era: '1920年代', region: '中国', gender: 'boy',
+      note: '1920年代的传统学堂与年长学生仍着长衫，外罩马褂，是"中学为体"的旧式学生形象。沈从文北上时便是"白面长衫"的文人装束；女教员亦有着长衫授课者。',
+      front: top('#3d4653') + skirtL('#3d4653') + mandarin('#2f3642', '#20252e') +
+        '<path d="M210 200 L210 560" stroke="#2f3642" stroke-width="2"/>' +
+        '<path d="M162 200 Q210 186 258 200 L256 372 Q210 384 164 372 Z" fill="#2f3338"/>' +
+        sl('#2f3338', 22) + sr('#2f3338', 22) +
+        '<path d="M196 196 L224 196 L224 206 L196 206 Z" fill="#1f2226"/>' +
+        '<circle cx="205" cy="216" r="2.2" fill="#c9a86a"/><circle cx="215" cy="240" r="2.2" fill="#c9a86a"/><circle cx="205" cy="264" r="2.2" fill="#c9a86a"/>'
+    },
+    {
+      id: 'cn-indanthrene', name: '阴丹士林蓝布长衫', era: '1930年代', region: '中国', gender: 'boy',
+      note: '1930年代德国染料"阴丹士林"色布风行全国，广告语"安安蓝"深入人心。这种蓝布长衫耐洗耐穿、价格低廉，是清贫学生与小学教员最常见的装束，也催生了旗袍的流行。',
+      front: top('#3f5f8a') + skirtL('#3f5f8a') + mandarin('#35507a', '#2c4468') +
+        '<path d="M210 200 L210 556" stroke="#35507a" stroke-width="2"/>' +
+        pantL('#262a31', 560, '#1c2027') + pantR('#262a31', 560, '#1c2027')
+    },
+    {
+      id: 'cn-suit', name: '西装校服', era: '1920年代', region: '中国', gender: 'boy',
+      note: '通商口岸的教会学校与贵族男校（如圣约翰大学附中）要求学生着西装、打领带上课，是西式教育的服饰符号。幼童则多穿水手领套衫与短裤。',
+      front: top('#f5f2ea') + shirtCollar('#f5f2ea') + tie('#7a2e2e') +
+        '<path d="M200 196 L220 196 L210 244 Z" fill="#f5f2ea"/>' +
+        '<path d="M164 202 Q164 188 210 186 L210 316 Q186 322 170 316 Z" fill="#2b2f36"/>' +
+        '<path d="M256 202 Q256 188 210 186 L210 316 Q234 322 250 316 Z" fill="#2b2f36"/>' +
+        '<path d="M210 186 L192 202 L210 236 Z" fill="#33383f"/><path d="M210 186 L228 202 L210 236 Z" fill="#33383f"/>' +
+        sl('#2b2f36') + sr('#2b2f36') +
+        '<path d="M180 238 L196 238 L194 252 L182 252 Z" fill="#c9a86a"/>' +
+        pantL('#4a4f57') + pantR('#4a4f57')
+    },
+    {
+      id: 'cn-summer-schoolboy', name: '小学男生夏装', era: '1930年代', region: '中国', gender: 'boy',
+      note: '1930年代都市小学男生夏季多穿白衬衫、背带短裤与长袜，戴印有校徽的学生帽。这一装束明显受西式童子军与预备学校制服影响，是"新式小学"的标准形象。',
+      front: top('#f5f2ea') + ssl('#f5f2ea') + ssr('#f5f2ea') + shirtCollar('#f5f2ea') +
+        '<path d="M186 200 L182 300" stroke="#2e3f55" stroke-width="7"/><path d="M234 200 L238 300" stroke="#2e3f55" stroke-width="7"/>' +
+        shorts('#2e3f55') + kneesocks('#f0ead8') +
+        '<circle cx="184" cy="256" r="2.5" fill="#c9a86a"/><circle cx="236" cy="256" r="2.5" fill="#c9a86a"/>' +
+        capStudent()
+    },
+    {
+      id: 'cn-winter-padded', name: '棉袍冬装', era: '1930年代', region: '中国', gender: 'boy',
+      note: '北方小学冬季发棉袄棉裤，粗布厚棉、结实耐穿，围巾与棉帽是御寒标配。老照片里的冬日童子军，也常在制服外罩一件棉袍操练。',
+      front: top('#34435c') + sl('#34435c') + sr('#34435c') +
+        '<path d="M170 220 L250 220 M170 242 L250 242 M170 264 L250 264 M170 286 L250 286 M170 308 L250 308" stroke="#2a3547" stroke-width="1.6"/>' +
+        mandarin('#2a3547', '#20293a') +
+        '<path d="M192 190 Q210 204 228 190 L232 200 Q210 216 188 200 Z" fill="#a63d3d"/>' +
+        '<path d="M226 196 Q240 210 244 240 L234 244 Q230 214 220 202 Z" fill="#a63d3d"/>' +
+        pantL('#2e3a4e') + pantR('#2e3a4e') +
+        '<path d="M180 76 Q210 56 240 76 L240 84 Q210 92 180 84 Z" fill="#4a4438"/>' +
+        '<path d="M180 76 Q172 84 176 96 L186 92 Z" fill="#3f3a30"/><path d="M240 76 Q248 84 244 96 L234 92 Z" fill="#3f3a30"/>'
+    },
+
+    /* ---- 中国 · 女童 ---- */
+    {
+      id: 'cn-wenming', name: '文明新装', era: '1920年代', region: '中国', gender: 'girl',
+      note: '五四前后女学生标配：浅色短袄（倒大袖）+黑裙+白袜+布鞋，齐耳短发、前刘海，不施脂粉，时称"文明新装"。1911年《学校制服规程令》即规定女生"着裙，裙用黑色"。张恨水《啼笑因缘》里的女学生便是此装束。',
+      front: top('#e3e8ea') + trumpetL('#e3e8ea', '#b8a06a') + trumpetR('#e3e8ea', '#b8a06a') +
+        mandarin('#e3e8ea', '#b8a06a') +
+        '<path d="M196 190 Q210 200 224 190 L232 300 L196 300 Z" fill="#d5dbde"/>' +
+        '<path d="M196 200 L232 296" stroke="#b8a06a" stroke-width="2.5"/>' +
+        kneesocks('#f5f2ea') + skirtM('#2c2c30') +
+        '<circle cx="193" cy="110" r="9" fill="none" stroke="#5a4a34" stroke-width="2"/>' +
+        '<circle cx="227" cy="110" r="9" fill="none" stroke="#5a4a34" stroke-width="2"/>' +
+        '<path d="M202 110 L218 110 M186 106 L178 102 M234 106 L242 102" stroke="#5a4a34" stroke-width="2" fill="none"/>'
+    },
+    {
+      id: 'cn-early-qipao', name: '早期旗袍校服', era: '1920–30年代', region: '中国', gender: 'girl',
+      note: '1929年《服制条例》将旗袍定为女子礼服。女中校园里的旗袍多用素色、剪裁直身、领仍高耸，端庄含蓄；至1930年代才渐趋合身。张爱玲在圣玛利亚女校就读时即着校服旗袍。',
+      front: '<path d="M172 196 Q210 184 248 196 L252 300 Q210 312 168 300 Z" fill="#9aa8b5"/>' +
+        skirtL('#9aa8b5') + sl('#9aa8b5') + sr('#9aa8b5') +
+        mandarin('#8a98a5', '#788694') +
+        '<path d="M214 210 L214 296 M222 214 L222 292" stroke="#788694" stroke-width="2"/>' +
+        '<circle cx="214" cy="222" r="1.8" fill="#5a6875"/><circle cx="214" cy="240" r="1.8" fill="#5a6875"/><circle cx="214" cy="258" r="1.8" fill="#5a6875"/><circle cx="214" cy="276" r="1.8" fill="#5a6875"/>' +
+        '<path d="M232 480 L240 556" stroke="#7a8a98" stroke-width="2"/>'
+    },
+    {
+      id: 'cn-girl-summer', name: '女学生夏装', era: '1930年代', region: '中国', gender: 'girl',
+      note: '白衫黑裙是1930年代女校最常见的夏装搭配，朴素利落。月份牌与电影杂志里的女学生形象，几乎都是浅色短衫配深色裙、白袜黑鞋。',
+      front: top('#f5f2ea') + ssl('#f5f2ea') + ssr('#f5f2ea') + shirtCollar('#f5f2ea') +
+        '<path d="M196 200 L224 200 L210 226 Z" fill="#f5f2ea"/>' +
+        skirtK('#2c2c30') + pleats('#1c1c20', 440) + kneesocks('#f5f2ea')
+    },
+    {
+      id: 'cn-girl-scout', name: '女童子军装', era: '1930年代', region: '中国', gender: 'girl',
+      note: '女童子军着裙装制服，戴圆顶帽或大盖帽，与男童军同样系青色领巾、束铜扣皮带，参加露营、操法与救护训练。1936年四川已屡有女童子军体能比赛获奖记录。',
+      front: top('#d9a84e') + ssl('#d9a84e') + ssr('#d9a84e') +
+        shirtCollar('#e8dcc0') + necker('#2e5a7d', '#f5f2ea') +
+        '<rect x="172" y="304" width="76" height="11" fill="#5a4632"/><circle cx="210" cy="309" r="4.5" fill="#c9a86a"/>' +
+        skirtK('#c9a85e') + kneesocks('#f0ead8') +
+        '<path d="M184 84 Q210 64 236 84 Q236 96 210 96 Q184 96 184 84 Z" fill="#d9a84e"/>' +
+        '<circle cx="210" cy="76" r="5" fill="#d8b25e"/>'
+    },
+    {
+      id: 'cn-missionary-girl', name: '教会女生制服', era: '1920年代', region: '中国', gender: 'girl',
+      note: '教会女校（如北平培华女中，林徽因曾就读）采用西式水手领连衣裙作校服，配长袜与黑皮鞋，是中西合璧的校园风景，也是"文明新装"的重要样式来源。',
+      front: top('#2e3f5c') + skirtM('#2e3f5c') + sl('#2e3f5c') + sr('#2e3f5c') +
+        sailorBack('#f5f2ea') + sailorFront('#f5f2ea', '#2e3f5c') + kneesocks('#f5f2ea')
+    },
+    {
+      id: 'cn-girl-winter', name: '少女棉袄裙', era: '1930年代', region: '中国', gender: 'girl',
+      note: '冬日女学生以花布短袄配深色长裙，外系围巾，仍是"上衣下裙"的旧制。 photopictures 里的女童棉袄多用藕荷、绛紫等沉稳色，滚边盘扣，一袄可穿多年。',
+      front: top('#9a7a8a') + ssl('#9a7a8a') + ssr('#9a7a8a') +
+        '<path d="M170 220 L250 220 M170 242 L250 242 M170 264 L250 264 M170 286 L250 286" stroke="#84687a" stroke-width="1.6"/>' +
+        mandarin('#84687a', '#6e5566') +
+        '<path d="M192 190 Q210 204 228 190 L232 200 Q210 216 188 200 Z" fill="#a63d3d"/>' +
+        '<path d="M226 196 Q240 210 244 240 L234 244 Q230 214 220 202 Z" fill="#a63d3d"/>' +
+        skirtM('#3a3a44') + kneesocks('#f5f2ea')
+    },
+    {
+      id: 'cn-mock-qipao', name: '摩登少女旗袍', era: '1930年代', region: '中国', gender: 'girl',
+      note: '1930年代上海女中学生开始穿花色旗袍、披针织披肩，是校服摩登化的一端。月份牌上的时髦女郎与学生闺秀，皆以旗袍为新女性象征。',
+      front: '<path d="M172 196 Q210 184 248 196 L252 300 Q210 312 168 300 Z" fill="#b56a6a"/>' +
+        skirtL('#b56a6a') + sl('#b56a6a') + sr('#b56a6a') +
+        '<circle cx="188" cy="230" r="2.6" fill="#e8c8d0"/><circle cx="226" cy="246" r="2.6" fill="#e8c8d0"/><circle cx="200" cy="262" r="2.6" fill="#e8c8d0"/><circle cx="230" cy="284" r="2.6" fill="#e8c8d0"/><circle cx="192" cy="300" r="2.6" fill="#e8c8d0"/><circle cx="222" cy="330" r="2.6" fill="#e8c8d0"/><circle cx="196" cy="360" r="2.6" fill="#e8c8d0"/><circle cx="232" cy="390" r="2.6" fill="#e8c8d0"/><circle cx="200" cy="430" r="2.6" fill="#e8c8d0"/><circle cx="228" cy="470" r="2.6" fill="#e8c8d0"/>' +
+        mandarin('#a85a5a', '#964e4e') +
+        '<path d="M170 200 Q210 214 250 200 L256 258 Q210 272 164 258 Z" fill="#d8cbb0" opacity="0.95"/>' +
+        '<path d="M172 258 L176 276 M188 264 L192 282 M204 268 L208 286 M220 268 L224 286 M236 264 L240 282 M248 258 L252 276" stroke="#c0b294" stroke-width="2"/>'
+    },
+
+    /* ---- 西方 · 男童 ---- */
+    {
+      id: 'uk-blazer', name: '英式预备学校校服', era: '1920–30年代', region: '英国', gender: 'boy',
+      note: '英国预备学校男生制服：海军蓝blazer、灰色短裤、长袜、条纹领带与校徽鸭舌帽。英国男童普遍要穿短裤到十三四岁，鸭舌校帽在1930年代已近乎普及。',
+      front: top('#24334d') + sl('#24334d') + sr('#24334d') +
+        shirtCollar('#f5f2ea') + tie('#8a2e2e', '#f5f2ea') +
+        '<path d="M210 186 L192 200 L210 230 Z" fill="#1c2942"/><path d="M210 186 L228 200 L210 230 Z" fill="#1c2942"/>' +
+        '<path d="M226 234 L242 234 L240 252 L233 258 L227 251 Z" fill="#c9a86a"/>' +
+        shorts('#4a4f57') + kneesocks('#24334d') + capPeaked('#24334d', '#161d2e', '#c9a86a')
+    },
+    {
+      id: 'uk-sailor-boy', name: '男童水手服', era: '1920年代', region: '英国/美国', gender: 'boy',
+      note: '水手服在1920年代仍受3至10岁男童欢迎，源自维多利亚时代王室小王子礼服。及膝短裤配长袜，水手帽檐已不再宽大，是邮购目录上的常青款。',
+      front: top('#2e3f5c') + sailorBack('#f5f2ea') + sailorFront('#f5f2ea', '#2e3f5c') +
+        ssl('#2e3f5c') + ssr('#2e3f5c') +
+        shorts('#f0ead8') + kneesocks('#f0ead8') +
+        '<path d="M180 84 Q180 58 210 58 Q240 58 240 84 L238 92 Q210 82 182 92 Z" fill="#f5f2ea"/>' +
+        '<path d="M180 80 Q210 88 240 80" stroke="#2e3f5c" stroke-width="5" fill="none"/>' +
+        '<circle cx="210" cy="70" r="4" fill="#2e3f5c"/>'
+    },
+    {
+      id: 'uk-norfolk', name: '诺福克装', era: '1920–30年代', region: '英国/美国', gender: 'boy',
+      note: '诺福克外套配及膝短裤与绑腿，是1920-30年代英美男童常见的"半正式"装束，原为狩猎外套，因耐穿实用而被校园与乡村家庭广泛采用。',
+      front: top('#6b5a43') + sl('#6b5a43') + sr('#6b5a43') +
+        shirtCollar('#e8dcc0') + tie('#7a6a4a', '#e8dcc0') +
+        '<rect x="172" y="298" width="76" height="10" fill="#4a3e2c"/>' +
+        '<rect x="176" y="238" width="26" height="18" rx="2" fill="#5a4c38"/><rect x="218" y="238" width="26" height="18" rx="2" fill="#5a4c38"/>' +
+        pantL('#5a4c3a', 460, '#3f3527') + pantR('#5a4c3a', 460, '#3f3527') +
+        kneesocks('#6a5f4a') + capFlat('#5a5148', '#3f392e')
+    },
+    {
+      id: 'uk-eton', name: '伊顿公学礼服', era: '1930年代', region: '英国', gender: 'boy',
+      note: '伊顿公学的标志性礼服：黑色燕尾服、白色硬领、条纹裤与高礼帽，是英国精英男校的传统符号。普通预备学校则无此待遇，统一着短裤与校徽帽。',
+      front: '<path d="M184 200 Q210 194 236 200 L232 316 Q210 326 188 316 Z" fill="#f5f2ea"/>' +
+        shirtCollar('#f5f2ea') +
+        '<path d="M164 202 Q164 188 210 186 L210 316 Q186 322 170 316 Z" fill="#26262a"/>' +
+        '<path d="M256 202 Q256 188 210 186 L210 316 Q234 322 250 316 Z" fill="#26262a"/>' +
+        '<path d="M210 186 L190 202 L210 238 Z" fill="#333338"/><path d="M210 186 L230 202 L210 238 Z" fill="#333338"/>' +
+        sl('#26262a') + sr('#26262a') +
+        pantL('#7a7f88', 586, '#5a5f68') + pantR('#7a7f88', 586, '#5a5f68') +
+        '<path d="M170 300 L192 300 L190 428 L168 428 Z" fill="#26262a"/>' +
+        '<path d="M250 300 L228 300 L230 428 L252 428 Z" fill="#26262a"/>' +
+        topHat()
+    },
+    {
+      id: 'uk-plusfours', name: '毛衣与plus-fours', era: '1920年代', region: '英国/美国', gender: 'boy',
+      note: '1920年代流行针织毛衣配plus-fours灯笼短裤，裤式源自高尔夫运动装束，长袜束住裤脚。报童帽与 flat cap 是英美男童的头号选择。',
+      front: top('#f5f2ea') +
+        '<path d="M164 202 Q164 188 210 185 Q256 188 256 202 L252 316 Q210 330 168 316 L196 212 Z" fill="#d8cbb0"/>' +
+        sl('#d8cbb0') + sr('#d8cbb0') +
+        '<path d="M196 212 L224 212" stroke="#a5382c" stroke-width="4"/>' +
+        '<path d="M172 298 L248 298 L246 310 L174 310 Z" fill="#5a4f3a"/>' +
+        pantL('#6a5f4a', 430, '#5a4f3a') + pantR('#6a5f4a', 430, '#5a4f3a') +
+        kneesocks('#d8cbb0') + capFlat('#5a5148', '#3f392e')
+    },
+    {
+      id: 'us-sweater', name: '美式字母毛衣', era: '1920年代', region: '美国', gender: 'boy',
+      note: '1920年代美国中学校园流行印有校名首字母的针织毛衣（letter sweater），内穿衬衫、系领带，下着灯笼裤，是 collegiate 风格渗入中学的产物。',
+      front: top('#7a3040') + sl('#7a3040') + sr('#7a3040') +
+        shirtCollar('#f5f2ea') + tie('#2e3f5c', '#f5f2ea') +
+        '<text x="210" y="262" font-size="46" text-anchor="middle" fill="#e8d8b0" font-family="Georgia,serif" font-weight="bold">S</text>' +
+        '<path d="M164 316 Q210 330 256 316 L254 326 Q210 340 166 326 Z" fill="#5e2432"/>' +
+        pantL('#4a4f57', 460) + pantR('#4a4f57', 460) + kneesocks('#d8cbb0') + capFlat('#3a3f47', '#262a30')
+    },
+    {
+      id: 'us-romper', name: '连体短裤（romper）', era: '1920年代', region: '美国', gender: 'boy',
+      note: 'rompers连体短裤是1920年代美国男童最流行的日常装，Sears、Wards 等邮购目录里花色繁多，方便活动；学龄前男童几乎人手一件，常配草帽与长袜。',
+      front: top('#4a6a8a') + ssl('#4a6a8a') + ssr('#4a6a8a') +
+        shirtCollar('#f5f2ea') +
+        shorts('#4a6a8a') +
+        '<circle cx="204" cy="318" r="2.5" fill="#f5f2ea"/><circle cx="216" cy="318" r="2.5" fill="#f5f2ea"/>' +
+        kneesocks('#f5f2ea') + capStraw()
+    },
+    {
+      id: 'scot-kilt', name: '苏格兰裙校服', era: '1920–30年代', region: '苏格兰', gender: 'boy',
+      note: '苏格兰学校男童穿格子呢裙（kilt）配羊毛背心与红绿格纹袜，是高地传统的校园遗存。英格兰富裕家庭亦常在礼仪场合让男童着裙。',
+      front: top('#f5f2ea') + shirtCollar('#f5f2ea') +
+        '<path d="M180 200 Q210 192 240 200 L236 316 Q210 326 184 316 Z" fill="#26262a"/>' +
+        '<circle cx="210" cy="216" r="2" fill="#c9a86a"/><circle cx="210" cy="234" r="2" fill="#c9a86a"/><circle cx="210" cy="252" r="2" fill="#c9a86a"/><circle cx="210" cy="270" r="2" fill="#c9a86a"/><circle cx="210" cy="288" r="2" fill="#c9a86a"/>' +
+        '<defs><pattern id="tartan" width="40" height="40" patternUnits="userSpaceOnUse">' +
+        '<rect width="40" height="40" fill="#1e3a5a"/>' +
+        '<path d="M0 10 H40 M0 30 H40 M10 0 V40 M30 0 V40" stroke="#7a2e2e" stroke-width="8"/>' +
+        '<path d="M0 14 H40 M0 26 H40 M14 0 V40 M26 0 V40" stroke="#2e5a3a" stroke-width="2"/>' +
+        '</pattern></defs>' +
+        skirtK('url(#tartan)') + pleats('#12233a', 430) +
+        '<path d="M200 330 L220 330 L216 356 Q210 362 204 356 Z" fill="#3a2a1a"/>' +
+        kneesocks('#8a2e2e') +
+        '<path d="M192 418 L190 432 M228 418 L230 432" stroke="#2e5a3a" stroke-width="5"/>' +
+        beret('#26262a')
+    },
+
+    /* ---- 西方 · 女童 ---- */
+    {
+      id: 'uk-gymslip', name: '体操服（gymslip）', era: '1920–30年代', region: '英国', gender: 'girl',
+      note: 'gymslip无袖束腰外衣原为女生体育运动服，1920年代起成为英国女校日常校服：内穿衬衫、系条纹领带、腰系girdle，下着灯笼裤与长袜，许多学校沿用至1950年代。',
+      front: top('#f5f2ea') + shirtCollar('#f5f2ea') + tie('#2e5a7d', '#f5f2ea') +
+        '<path d="M180 200 Q210 192 240 200 L248 312 Q210 324 172 312 Z" fill="#24334d"/>' +
+        skirtK('#24334d') + pleats('#1a2438', 440) +
+        '<rect x="170" y="300" width="80" height="10" fill="#1a2438"/>' +
+        kneesocks('#f5f2ea')
+    },
+    {
+      id: 'uk-pinafore', name: '背带罩裙（pinafore）', era: '1920年代', region: '英国', gender: 'girl',
+      note: 'pinafore背带罩裙是英国小学女生的经典校服，罩在衬衫外穿，保护内衫；至今许多预备学校仍保留此制。与gymslip并称英式女校两大经典。',
+      front: top('#f5f2ea') + shirtCollar('#f5f2ea') +
+        '<path d="M188 186 L194 240" stroke="#24334d" stroke-width="8"/><path d="M232 186 L226 240" stroke="#24334d" stroke-width="8"/>' +
+        '<path d="M186 210 Q210 202 234 210 L240 312 Q210 324 180 312 Z" fill="#24334d"/>' +
+        skirtK('#24334d') + pleats('#1a2438', 440) +
+        '<circle cx="192" cy="216" r="2" fill="#c9a86a"/><circle cx="228" cy="216" r="2" fill="#c9a86a"/>' +
+        kneesocks('#f5f2ea')
+    },
+    {
+      id: 'uk-sailor-dress', name: '水手连衣裙', era: '1920年代', region: '英国/美国', gender: 'girl',
+      note: '水手领连衣裙在1920年代女童中极流行，腰线提高、裙摆及膝，配长袜与玛丽珍鞋。1920年代女孩裙摆已升至膝上，是童装现代化的标志。',
+      front: top('#2e3f5c') + skirtM('#2e3f5c') +
+        sailorBack('#f5f2ea') + sailorFront('#f5f2ea', '#2e3f5c') +
+        '<path d="M210 236 L200 224 L206 244 Z" fill="#a5382c"/><path d="M210 236 L220 224 L214 244 Z" fill="#a5382c"/>' +
+        kneesocks('#f5f2ea')
+    },
+    {
+      id: 'uk-peterpan', name: '彼得潘领连衣裙', era: '1920年代', region: '英国/美国', gender: 'girl',
+      note: '彼得潘领得名于1911年舞台剧《彼得·潘》，1920年代成为女童裙装经典元素：圆而平的娃娃领配素色连衣裙与腰封，甜美端庄，四季皆宜。',
+      front: top('#a8c0d8') + skirtM('#a8c0d8') + ssl('#a8c0d8') + ssr('#a8c0d8') +
+        peterPan('#f5f2ea') +
+        '<rect x="172" y="296" width="76" height="12" fill="#f5f2ea"/>' +
+        '<path d="M200 302 L206 316 L214 302 Z" fill="#f5f2ea"/>' +
+        kneesocks('#f5f2ea')
+    },
+    {
+      id: 'us-jumper', name: '美式跳线裙', era: '1920–30年代', region: '美国', gender: 'girl',
+      note: 'jumper dress（美式背带裙）罩在blouse外穿，配鞍脊鞋（saddle shoes）与白袜，是1920-30年代美国女学生的日常。Gingham格子布款尤为流行。',
+      front: top('#f5f2ea') + shirtCollar('#f5f2ea') +
+        '<path d="M188 188 L194 244" stroke="#7a5a3a" stroke-width="8"/><path d="M232 188 L226 244" stroke="#7a5a3a" stroke-width="8"/>' +
+        '<path d="M186 212 Q210 204 234 212 L240 314 Q210 326 180 314 Z" fill="#7a5a3a"/>' +
+        skirtK('#7a5a3a') + pleats('#63492e', 440) +
+        '<circle cx="192" cy="220" r="2" fill="#d8cbb0"/><circle cx="228" cy="220" r="2" fill="#d8cbb0"/>' +
+        kneesocks('#f5f2ea')
+    },
+    {
+      id: 'us-dropwaist', name: '二十年代直筒裙', era: '1920年代', region: '美国', gender: 'girl',
+      note: '1920年代"flapper"风潮也吹进童装：腰线下移至臀部的直筒裙，裙摆及膝，配珠饰发带与T型搭扣鞋。张爱玲笔下那个时代的少女，正穿着这样的裙子长大。',
+      front: '<path d="M172 196 Q210 184 248 196 L246 340 Q210 350 174 340 Z" fill="#d8cfe0"/>' +
+        '<path d="M174 340 L246 340 L264 470 Q210 488 156 470 Z" fill="#d8cfe0"/>' +
+        ssl('#d8cfe0') + ssr('#d8cfe0') +
+        '<path d="M174 338 L246 338" stroke="#b8aec8" stroke-width="3"/>' +
+        '<circle cx="186" cy="332" r="2.4" fill="#c9a86a"/><circle cx="200" cy="330" r="2.4" fill="#c9a86a"/><circle cx="214" cy="330" r="2.4" fill="#c9a86a"/><circle cx="228" cy="332" r="2.4" fill="#c9a86a"/>' +
+        kneesocks('#f5f2ea') +
+        '<path d="M166 84 Q210 68 254 84" stroke="#c9a86a" stroke-width="5" fill="none"/>' +
+        '<circle cx="192" cy="78" r="2.6" fill="#a5382c"/><circle cx="210" cy="74" r="2.6" fill="#33506e"/><circle cx="228" cy="78" r="2.6" fill="#a5382c"/>'
+    },
+    {
+      id: 'uk-winter-coat', name: '冬季大衣裙装', era: '1930年代', region: '英国/美国', gender: 'girl',
+      note: '寒冬里羊毛大衣、贝雷帽与长统靴是英美城市女童的过冬三件套。1930年代经济萧条，童装趋于保守，大衣多承袭姐姐的旧衣，"make do and mend"。',
+      front: '<path d="M170 196 Q210 184 250 196 L256 300 Q210 312 164 300 Z" fill="#7a3030"/>' +
+        skirtL('#7a3030') + sl('#7a3030') + sr('#7a3030') +
+        '<path d="M188 186 Q210 176 232 186 Q238 196 232 204 Q210 194 188 204 Q182 196 188 186 Z" fill="#5a4a3a"/>' +
+        '<path d="M206 216 L206 500 M214 220 L214 496" stroke="#5e2424" stroke-width="2"/>' +
+        '<circle cx="206" cy="240" r="3" fill="#3a1a1a"/><circle cx="206" cy="280" r="3" fill="#3a1a1a"/><circle cx="206" cy="320" r="3" fill="#3a1a1a"/><circle cx="206" cy="360" r="3" fill="#3a1a1a"/><circle cx="206" cy="400" r="3" fill="#3a1a1a"/>' +
+        '<path d="M192 188 Q210 200 228 188 L232 198 Q210 212 188 198 Z" fill="#d8cbb0"/>' +
+        beret('#2f3338')
+    },
+    {
+      id: 'uk-sunday', name: '礼拜连衣裙', era: '1930年代', region: '英国/美国', gender: 'girl',
+      note: '周日去教堂要穿最体面的白裙：蕾丝领、缎带腰带与草帽，是"Sunday best"。过去童装耐穿易洗，白裙平时舍不得穿，节日才得上身。',
+      front: top('#f5f2ea') + skirtM('#f5f2ea') + ssl('#f5f2ea') + ssr('#f5f2ea') +
+        peterPan('#f5f2ea') +
+        '<path d="M186 184 Q210 176 234 184 Q242 196 234 206 Q210 194 186 206 Q178 196 186 184 Z" fill="none" stroke="#d8c9a8" stroke-width="2" stroke-dasharray="4 3"/>' +
+        '<rect x="172" y="296" width="76" height="12" fill="#e8b8c0"/>' +
+        '<path d="M200 302 L210 318 L220 302 L214 298 L210 310 L206 298 Z" fill="#e8b8c0"/>' +
+        '<ellipse cx="210" cy="76" rx="46" ry="16" fill="#e6cd8e"/>' +
+        '<path d="M186 76 Q184 52 210 50 Q236 52 234 76 Q210 64 186 76 Z" fill="#e6cd8e"/>' +
+        '<path d="M192 74 Q210 82 228 74" stroke="#c9a86a" stroke-width="4" fill="none"/>' +
+        kneesocks('#f5f2ea')
+    },
+    {
+      id: 'uk-cardigan', name: '开衫背带裙', era: '1920–30年代', region: '英国/美国', gender: 'girl',
+      note: '针织开衫罩在背带裙外，是1920-30年代英美校园最常见的叠穿法。开衫用校色毛线织成，胸口绣校徽，与男生毛衣异曲同工。',
+      front: top('#f5f2ea') + shirtCollar('#f5f2ea') +
+        '<path d="M188 188 L194 244" stroke="#24334d" stroke-width="8"/><path d="M232 188 L226 244" stroke="#24334d" stroke-width="8"/>' +
+        '<path d="M186 212 Q210 204 234 212 L240 314 Q210 326 180 314 Z" fill="#24334d"/>' +
+        skirtK('#24334d') + pleats('#1a2438', 440) +
+        '<path d="M164 202 Q164 188 210 185 L212 316 Q186 322 170 316 Z" fill="#a5382c"/>' +
+        '<path d="M256 202 Q256 188 210 185 L208 316 Q234 322 250 316 Z" fill="#a5382c"/>' +
+        sl('#a5382c') + sr('#a5382c') +
+        '<circle cx="200" cy="240" r="2.4" fill="#f5e8d0"/><circle cx="200" cy="262" r="2.4" fill="#f5e8d0"/><circle cx="200" cy="284" r="2.4" fill="#f5e8d0"/>' +
+        kneesocks('#f5f2ea')
+    }
+  ];
+
+  /* ============================================================
+     发型 · 16 种（男女各 8）
+     ============================================================ */
+  var BANGS_DARK = '<path d="M166 94 Q170 58 210 54 Q250 58 254 94 Q242 74 210 74 Q178 74 166 94 Z" fill="#2b2118"/>';
+  var BANGS_MID = '<path d="M164 96 Q168 56 212 54 Q254 56 256 96 Q246 70 212 70 Q180 70 172 104 Z" fill="#3a2a1c"/>';
+  var MASS_DARK = '<path d="M158 100 Q156 50 210 46 Q264 50 262 100 Q262 132 254 152 L166 152 Q158 132 158 100 Z" fill="#2b2118"/>';
+  var MASS_MID = '<path d="M160 104 Q158 52 210 48 Q262 52 260 104 Q260 136 254 154 L166 154 Q160 136 160 104 Z" fill="#3a2a1c"/>';
+
+  var HAIRS = [
+    { id: 'hair-braids', name: '双麻花辫', gender: 'girl', note: '民国女学生最常见的发型：前刘海加双麻花辫，辫梢扎红头绳，朴素精神。《啼笑因缘》里的女学生以此形象入书。',
+      back: MASS_DARK +
+        '<path d="M176 150 Q168 200 173 250 Q178 300 171 342" stroke="#2b2118" stroke-width="15" fill="none" stroke-linecap="round"/>' +
+        '<path d="M244 150 Q252 200 247 250 Q242 300 249 342" stroke="#2b2118" stroke-width="15" fill="none" stroke-linecap="round"/>' +
+        '<path d="M170 186 Q176 190 180 186 M170 218 Q176 222 180 218 M170 250 Q176 254 180 250 M170 282 Q176 286 180 282 M171 314 Q177 318 181 314" stroke="#4a3423" stroke-width="3" fill="none"/>' +
+        '<path d="M250 186 Q244 190 240 186 M250 218 Q244 222 240 218 M250 250 Q244 254 240 250 M250 282 Q244 286 240 282 M249 314 Q243 318 239 314" stroke="#4a3423" stroke-width="3" fill="none"/>' +
+        '<path d="M170 148 L156 138 L161 156 Z M178 146 L192 138 L187 156 Z" fill="#c0392b"/>' +
+        '<path d="M250 148 L264 138 L259 156 Z M242 146 L228 138 L233 156 Z" fill="#c0392b"/>',
+      front: BANGS_DARK +
+        '<path d="M166 94 Q160 124 168 152 L180 150 Q172 122 176 98 Z" fill="#2b2118"/>' +
+        '<path d="M254 94 Q260 124 252 152 L240 150 Q248 122 244 98 Z" fill="#2b2118"/>' },
+    { id: 'hair-bob', name: '齐耳短发', gender: 'girl', note: '1920年代波波头（bob）传入中国，女学生率先剪去长发，象征新女性独立。上海理发师已能为时髦女子烫出"盖住耳朵"的齐耳短发。',
+      back: '<path d="M156 110 Q152 50 210 46 Q268 50 264 110 Q264 142 258 160 L162 160 Q154 142 156 110 Z" fill="#3a2a1c"/>',
+      front: BANGS_MID + '<path d="M226 84 Q240 78 250 86" stroke="#4a3423" stroke-width="3" fill="none"/>' },
+    { id: 'hair-single-braid', name: '单根长辫', gender: 'girl', note: '一根长辫垂于背后，是传统与校园气质的结合。1920年代乡间女童与年长女学生仍多留此发式，辫梢系红绳或头绳。',
+      back: MASS_DARK +
+        '<path d="M206 148 Q200 220 208 290 Q214 350 206 414" stroke="#2b2118" stroke-width="16" fill="none" stroke-linecap="round"/>' +
+        '<path d="M202 190 Q208 194 212 190 M200 226 Q206 230 210 226 M201 262 Q207 266 211 262 M203 298 Q209 302 213 298 M205 334 Q211 338 215 334 M206 370 Q212 374 216 370" stroke="#4a3423" stroke-width="3" fill="none"/>' +
+        '<path d="M200 146 L196 136 L208 136 L204 146 Z" fill="#c0392b"/>',
+      front: BANGS_DARK },
+    { id: 'hair-ponytails', name: '双马尾', gender: 'girl', note: '双马尾配蝴蝶结，活泼的少女发型，1920年代中西女童皆宜，与直筒裙、长袜是绝配。',
+      back: MASS_MID +
+        '<path d="M172 120 Q142 160 138 230 Q140 280 152 316" stroke="#3a2a1c" stroke-width="14" fill="none" stroke-linecap="round"/>' +
+        '<path d="M248 120 Q278 160 282 230 Q280 280 268 316" stroke="#3a2a1c" stroke-width="14" fill="none" stroke-linecap="round"/>' +
+        '<path d="M166 112 L150 104 L153 122 Z M176 110 L192 104 L188 122 Z" fill="#c0392b"/>' +
+        '<path d="M254 112 L270 104 L267 122 Z M244 110 L228 104 L232 122 Z" fill="#c0392b"/>',
+      front: BANGS_MID },
+    { id: 'hair-western-curls', name: '西式长卷发', gender: 'girl', note: '1920年代西方女孩流行的长卷发，烫发风尚经上海等通商口岸传入中国，成为摩登女郎与影星的标志。',
+      back: '<path d="M154 108 Q150 48 210 44 Q270 48 266 108 Q266 140 260 158 L160 158 Q148 140 154 108 Z" fill="#a5713f"/>' +
+        '<circle cx="166" cy="182" r="13" fill="#a5713f"/><circle cx="158" cy="214" r="13" fill="#a5713f"/><circle cx="164" cy="246" r="12" fill="#a5713f"/>' +
+        '<circle cx="254" cy="182" r="13" fill="#a5713f"/><circle cx="262" cy="214" r="13" fill="#a5713f"/><circle cx="256" cy="246" r="12" fill="#a5713f"/>',
+      front: '<path d="M164 96 Q170 54 210 52 Q252 54 256 96 Q248 68 210 68 Q176 68 170 100 Z" fill="#a5713f"/>' +
+        '<path d="M166 96 Q160 120 164 146 Q170 150 174 146 Q168 120 172 98 Z" fill="#a5713f"/>' +
+        '<path d="M254 96 Q260 120 256 146 Q250 150 246 146 Q252 120 248 98 Z" fill="#a5713f"/>' },
+    { id: 'hair-headband', name: '短发配发箍', gender: 'girl', note: '短发配珠饰发箍，是1920年代欧美少女的典型打扮，也是月份牌里摩登女学生的最爱。',
+      back: '<path d="M156 110 Q152 50 210 46 Q268 50 264 110 Q264 142 258 160 L162 160 Q154 142 156 110 Z" fill="#2b2118"/>',
+      front: BANGS_DARK +
+        '<path d="M166 86 Q210 66 254 86" stroke="#b8934a" stroke-width="6" fill="none"/>' +
+        '<circle cx="192" cy="78" r="2.6" fill="#c0392b"/><circle cx="210" cy="74" r="2.6" fill="#33506e"/><circle cx="228" cy="78" r="2.6" fill="#c0392b"/>' },
+    { id: 'hair-buns', name: '双圆髻', gender: 'girl', note: '张恨水《啼笑因缘》里女学生"绾了双圆髻"，是1920年代北平女学生的俏皮发型。',
+      back: MASS_DARK,
+      front: BANGS_DARK +
+        '<circle cx="176" cy="64" r="15" fill="#2b2118"/><circle cx="244" cy="64" r="15" fill="#2b2118"/>' +
+        '<path d="M168 76 L184 76 L182 82 L170 82 Z" fill="#c0392b"/><path d="M236 76 L252 76 L250 82 L238 82 Z" fill="#c0392b"/>' },
+    { id: 'hair-swallow', name: '燕尾刘海', gender: 'girl', note: '民国女学生将额前刘海剪成尖角"燕尾式"，颇为新潮；另有更短的"满天星"刘海，见于记载中的新女性发式。',
+      back: '<path d="M156 110 Q152 50 210 46 Q268 50 264 110 Q264 142 258 160 L162 160 Q154 142 156 110 Z" fill="#3a2a1c"/>',
+      front: '<path d="M166 94 L188 64 L196 92 L206 62 L214 92 L224 64 L234 94 Q210 76 166 94 Z" fill="#3a2a1c"/>' },
+    { id: 'hair-crew', name: '板寸', gender: 'boy', note: '民国男学生常见的利落寸头，鲁迅即以此发型标识。毛发粗硬者剪"立式板寸"，精神抖擞。',
+      back: '', front: '<path d="M164 102 Q166 56 210 54 Q254 56 256 102 Q240 80 210 80 Q180 80 164 102 Z" fill="#2b2118"/>' },
+    { id: 'hair-center', name: '中分', gender: 'boy', note: '胡适、徐志摩等民国知识分子标志性的中分头，沈从文从湘西到北京后也由寸头改为中分，定格了"白面长衫"的文人形象。',
+      back: '', front: '<path d="M162 104 Q164 54 210 54 Q256 54 258 104 Q244 78 210 78 Q176 78 162 104 Z" fill="#2b2118"/>' +
+        '<path d="M210 56 L210 70" stroke="#2b2118" stroke-width="3"/>' },
+    { id: 'hair-side', name: '三七分', gender: 'boy', note: '1930年代男学生最普遍的整洁分头，稍讲究者擦头油，一丝不苟。梅兰芳的三七分是民国摄影史上的经典。',
+      back: '', front: '<path d="M162 104 Q164 54 210 54 Q256 54 258 104 Q250 74 224 70 Q190 66 170 92 Z" fill="#2b2118"/>' +
+        '<path d="M224 66 Q244 70 254 88" stroke="#2b2118" stroke-width="4" fill="none"/>' },
+    { id: 'hair-slick', name: '背头', gender: 'boy', note: '向后梳拢的背头，年纪稍长或讲究者要擦头油。中年胡适、闻一多、茅盾皆是此发型。',
+      back: '', front: '<path d="M164 96 Q172 50 210 50 Q250 50 256 96 Q246 64 210 60 Q180 60 170 82 Z" fill="#241a12"/>' +
+        '<path d="M198 62 Q216 57 234 66" stroke="#4a3423" stroke-width="3" fill="none"/>' },
+    { id: 'hair-bowl', name: '西瓜头', gender: 'boy', note: '幼童常见的"锅盖头"，齐刘海一圈剪齐，1920年代乡间与城市幼童皆多，配长衫或短衫皆宜。',
+      back: '', front: '<path d="M160 108 Q156 52 210 52 Q264 52 260 108 L256 116 Q240 88 210 88 Q180 88 164 116 Z" fill="#3a2a1c"/>' +
+        '<path d="M164 112 Q210 100 256 112" stroke="#241a12" stroke-width="2" fill="none"/>' },
+    { id: 'hair-wavy', name: '微卷学生头', gender: 'boy', note: '微卷短发配学生帽，是教会学校男生的常见形象；西式分头与微卷在通商口岸城市渐次流行。',
+      back: '', front: '<path d="M164 102 Q166 56 210 54 Q254 56 256 102 Q240 80 210 80 Q180 80 164 102 Z" fill="#4a3423"/>' +
+        '<path d="M182 76 Q196 68 210 72 M226 74 Q238 70 246 80" stroke="#5a4633" stroke-width="3" fill="none"/>' },
+    { id: 'hair-pompadour', name: '西式背头', gender: 'boy', note: '1920年代欧美男孩流行的后梳蓬巴杜式发型，额前隆起，经好莱坞电影传入中国沿海城市。',
+      back: '', front: '<path d="M166 92 Q170 44 210 44 Q252 44 256 92 Q250 58 210 56 Q180 56 172 78 Z" fill="#6b4a2f"/>' +
+        '<path d="M186 66 Q200 58 214 64" stroke="#7a5a3f" stroke-width="4" fill="none"/>' },
+    { id: 'hair-bangs-part', name: '齐刘海分头', gender: 'boy', note: '刘海加分头，小学男生的乖巧发型，1930年代北平、上海的小学照片里常见。',
+      back: '', front: '<path d="M162 106 Q160 52 210 52 Q260 52 258 106 L254 112 Q238 86 210 86 Q182 86 166 112 Z" fill="#2b2118"/>' +
+        '<path d="M214 60 Q240 62 252 84 Q240 70 218 70 Z" fill="#2b2118"/>' }
+  ];
+
+  /* ============================================================
+     鞋子 · 9 款
+     ============================================================ */
+  var SHOES = [
+    { id: 'shoe-maryjane', name: '黑色玛丽珍鞋', gender: 'unisex', note: '1920年代起流行的圆头搭带鞋，中西女童皆爱，配长袜是文明新装与水手连衣裙的标准搭配。',
+      front: '<path d="' + FOOT_L + '" fill="#2b2b30"/><path d="' + FOOT_R + '" fill="#2b2b30"/>' +
+        '<path d="M184 566 L200 566" stroke="#141416" stroke-width="3"/><path d="M222 566 L238 566" stroke="#141416" stroke-width="3"/>' +
+        '<circle cx="192" cy="562" r="2.2" fill="#d8d8dc"/><circle cx="230" cy="562" r="2.2" fill="#d8d8dc"/>' +
+        sole('#141416') +
+        '<path d="M176 572 Q186 566 196 570" stroke="rgba(255,255,255,.28)" stroke-width="2.5" fill="none"/>' +
+        '<path d="M228 572 Q238 566 248 570" stroke="rgba(255,255,255,.28)" stroke-width="2.5" fill="none"/>' },
+    { id: 'shoe-oxford-white', name: '白色系带皮鞋', gender: 'unisex', note: '白色系带童皮鞋，配校服长短裤皆宜；1920年代男童多以茶色或白色皮鞋配短裤长袜。',
+      front: '<path d="' + FOOT_L + '" fill="#f0ece2"/><path d="' + FOOT_R + '" fill="#f0ece2"/>' +
+        laces('#b8a88a') + sole('#8a7a5a') },
+    { id: 'shoe-oxford-black', name: '三接头牛津鞋', gender: 'unisex', note: '黑色三接头牛津鞋，正式场合与校服搭配；民国绅士与学生皆以黑皮鞋为正装。',
+      front: '<path d="' + FOOT_L + '" fill="#2a2a2e"/><path d="' + FOOT_R + '" fill="#2a2a2e"/>' +
+        '<path d="M168 572 Q183 580 198 572" stroke="#0c0c10" stroke-width="2.5" fill="none"/>' +
+        '<path d="M214 572 Q229 580 244 572" stroke="#0c0c10" stroke-width="2.5" fill="none"/>' +
+        laces('#4a4a50') + sole('#0c0c10') },
+    { id: 'shoe-embroidered', name: '绣花布鞋', gender: 'girl', note: '中式布鞋，鞋头绣花，女学生配文明新装与白袜；不穿耳、天足、布鞋，正是五四女学生的"文明"形象。',
+      front: '<path d="' + FOOT_L + '" fill="#6e2a2a"/><path d="' + FOOT_R + '" fill="#6e2a2a"/>' +
+        '<circle cx="178" cy="572" r="2.6" fill="#e8b0c0"/><circle cx="184" cy="569" r="2.6" fill="#e8b0c0"/><circle cx="186" cy="575" r="2.6" fill="#e8b0c0"/><circle cx="180" cy="577" r="2.6" fill="#e8b0c0"/><circle cx="181" cy="573" r="1.8" fill="#e8d060"/>' +
+        '<circle cx="226" cy="572" r="2.6" fill="#e8b0c0"/><circle cx="232" cy="569" r="2.6" fill="#e8b0c0"/><circle cx="234" cy="575" r="2.6" fill="#e8b0c0"/><circle cx="228" cy="577" r="2.6" fill="#e8b0c0"/><circle cx="229" cy="573" r="1.8" fill="#e8d060"/>' +
+        '<path d="M170 584 Q183 592 200 584" stroke="#4a1a1a" stroke-width="2" stroke-dasharray="3 3" fill="none"/>' +
+        '<path d="M216 584 Q229 592 246 584" stroke="#4a1a1a" stroke-width="2" stroke-dasharray="3 3" fill="none"/>' },
+    { id: 'shoe-canvas', name: '帆布球鞋', gender: 'unisex', note: '1920年代出现的帆布橡胶底运动鞋，上体育课必备；美国Keds等品牌正是此时兴起。',
+      front: '<path d="' + FOOT_L + '" fill="#f5f5f0"/><path d="' + FOOT_R + '" fill="#f5f5f0"/>' +
+        '<path d="M168 588 Q183 596 204 588 L204 594 Q183 602 168 594 Z" fill="#e0e0d8"/>' +
+        '<path d="M214 588 Q229 596 250 588 L250 594 Q229 602 214 594 Z" fill="#e0e0d8"/>' +
+        laces('#9a9a92') +
+        '<path d="M176 566 L188 566 M228 566 L240 566" stroke="#d8d8d0" stroke-width="3"/>' },
+    { id: 'shoe-tsandal', name: 'T带凉鞋', gender: 'girl', note: '1920-30年代流行的T型搭扣皮凉鞋，夏天校园常见，英文称school sandals，配白袜是标准穿法。',
+      front: '<path d="' + FOOT_L + '" fill="#8a5a30"/><path d="' + FOOT_R + '" fill="#8a5a30"/>' +
+        '<path d="M186 560 L186 588" stroke="#6a4522" stroke-width="4"/><path d="M172 572 L200 572" stroke="#6a4522" stroke-width="4"/>' +
+        '<path d="M230 560 L230 588" stroke="#6a4522" stroke-width="4"/><path d="M216 572 L244 572" stroke="#6a4522" stroke-width="4"/>' +
+        '<circle cx="186" cy="560" r="2.6" fill="#c9a86a"/><circle cx="230" cy="560" r="2.6" fill="#c9a86a"/>' },
+    { id: 'shoe-plimsoll', name: '白色体操鞋', gender: 'unisex', note: '白色体操鞋（plimsolls），英国体操课标准用鞋，橡胶包头、帆布鞋身，与gymslip是绝配。',
+      front: '<path d="' + FOOT_L + '" fill="#f5f5f0"/><path d="' + FOOT_R + '" fill="#f5f5f0"/>' +
+        '<path d="M168 584 Q183 592 204 584" stroke="#2e3f5c" stroke-width="5" fill="none"/>' +
+        '<path d="M214 584 Q229 592 250 584" stroke="#2e3f5c" stroke-width="5" fill="none"/>' +
+        laces('#9a9a92') },
+    { id: 'shoe-boots', name: '黑色长统靴', gender: 'unisex', note: '黑色长统靴，冬季与骑马活动穿着；1930年代英美城市女童寒冬以长靴配羊毛袜出门。',
+      front: bootL('#2b2b30') + bootR('#2b2b30') +
+        '<path d="M176 464 L204 464 M216 464 L244 464" stroke="#1d1d22" stroke-width="3"/>' },
+    { id: 'shoe-ankleboots', name: '棕色短靴', gender: 'unisex', note: '棕色系带短靴，结实耐穿的日常选择，1920年代美国乡村与城市男童皆常穿。',
+      front: '<path d="M178 536 Q176 556 178 566 L204 566 Q206 556 204 536 Z" fill="#7a5230"/>' +
+        '<path d="M216 536 Q214 556 217 566 L244 566 Q246 556 244 536 Z" fill="#7a5230"/>' +
+        '<path d="' + FOOT_L + '" fill="#7a5230"/><path d="' + FOOT_R + '" fill="#7a5230"/>' +
+        '<path d="M182 540 L190 546 M188 538 L196 544 M226 540 L234 546 M232 538 L240 544" stroke="#5e3e22" stroke-width="2.5" fill="none"/>' +
+        sole('#4a2e18') }
+  ];
+
+  window.WD = {
+    SKIN: SKIN, BODY: BODY, FACE: FACE, GHOST: GHOST,
+    OUTFITS: OUTFITS, HAIRS: HAIRS, SHOES: SHOES
+  };
+})();
+
+</script>
+<script>
+/* ============================================================
+   交互逻辑
+   ============================================================ */
+(function () {
+  var WD = window.WD;
+  var stage = document.getElementById('stage');
+  var grid = document.getElementById('grid');
+  var info = document.getElementById('info');
+  var caption = document.getElementById('stageCaption');
+
+  var DEFAULTS = {
+    boy: { hair: 'hair-side', outfit: 'cn-student-zhongshan', shoe: 'shoe-oxford-black' },
+    girl: { hair: 'hair-braids', outfit: 'cn-wenming', shoe: 'shoe-maryjane' }
+  };
+
+  var state = { gender: 'boy', cat: 'hair', filter: 'all', hair: null, outfit: null, shoe: null };
+
+  function find(list, id) {
+    for (var i = 0; i < list.length; i++) { if (list[i].id === id) return list[i]; }
+    return null;
+  }
+  function genderLabel(g) { return g === 'boy' ? '男孩' : g === 'girl' ? '女孩' : '男女通用'; }
+  function catLabel(c) { return c === 'hair' ? '发型' : c === 'outfit' ? '衣服' : '鞋子'; }
+  function catList(c) { return c === 'hair' ? WD.HAIRS : c === 'outfit' ? WD.OUTFITS : WD.SHOES; }
+
+  /* ---------- 舞台渲染 ---------- */
+  var DECOR =
+    '<ellipse cx="210" cy="648" rx="158" ry="22" fill="rgba(90,70,30,.10)"/>' +
+    '<circle cx="210" cy="238" r="192" fill="rgba(255,253,246,.5)"/>' +
+    '<circle cx="210" cy="238" r="192" fill="none" stroke="rgba(165,56,44,.10)" stroke-width="2" stroke-dasharray="6 8"/>';
+
+  function renderStage() {
+    var html = DECOR +
+      '<g id="l-hair-back">' + (state.hair ? state.hair.back || '' : '') + '</g>' +
+      '<g id="l-body">' + WD.BODY + WD.FACE[state.gender] + '</g>' +
+      '<g id="l-outfit">' + (state.outfit ? state.outfit.front : '') + '</g>' +
+      '<g id="l-hair-front">' + (state.hair ? state.hair.front : '') + '</g>' +
+      '<g id="l-shoe">' + (state.shoe ? state.shoe.front : '') + '</g>';
+    stage.innerHTML = html;
+    caption.textContent =
+      (state.gender === 'boy' ? '男孩' : '女孩') + ' · ' +
+      (state.hair ? state.hair.name : '未选发型') + ' + ' +
+      (state.outfit ? state.outfit.name : '未选衣服') + ' + ' +
+      (state.shoe ? state.shoe.name : '未选鞋子');
+  }
+
+  /* ---------- 缩略图 ---------- */
+  var CROPS = { hair: '130 30 160 200', outfit: '60 20 300 660', shoe: '140 536 140 148' };
+  function thumbSVG(item, cat) {
+    return '<svg viewBox="' + CROPS[cat] + '" xmlns="http://www.w3.org/2000/svg">' +
+      (item.back || '') + WD.GHOST + (item.front || '') + '</svg>';
+  }
+
+  /* ---------- 衣橱网格 ---------- */
+  function currentItems() {
+    var list = catList(state.cat).slice();
+    if (state.cat !== 'shoe' && state.filter !== 'all') {
+      list = list.filter(function (it) { return it.gender === state.filter; });
+    }
+    return list;
+  }
+
+  function renderGrid() {
+    var items = currentItems();
+    var html = '';
+    items.forEach(function (it) {
+      var equipped = state[state.cat] && state[state.cat].id === it.id;
+      var tag = state.cat === 'shoe' ? '' :
+        (state.cat === 'hair' ? genderLabel(it.gender) : it.era);
+      html += '<div class="cell' + (equipped ? ' equipped' : '') + '" data-id="' + it.id + '" role="button" tabindex="0" title="' + it.name + '">' +
+        '<div class="thumb">' + thumbSVG(it, state.cat) + '</div>' +
+        '<div class="cell-name">' + it.name + '</div>' +
+        (tag ? '<div class="cell-tag">' + tag + '</div>' : '') +
+        '</div>';
+    });
+    grid.innerHTML = html || '<p style="grid-column:1/-1;text-align:center;color:var(--ink-2);padding:24px 0;">该分类下暂无单品</p>';
+  }
+
+  function showInfo(it) {
+    var tags = '<span class="tag">' + catLabel(state.cat) + '</span>' +
+      (it.gender ? '<span class="tag">' + genderLabel(it.gender) + '</span>' : '');
+    if (it.era) { tags += '<span class="tag">' + it.era + '</span>'; }
+    if (it.region) { tags += '<span class="tag region">' + it.region + '</span>'; }
+    info.innerHTML = '<h2>' + it.name + '</h2><div class="tags">' + tags + '</div><p class="note">' + it.note + '</p>';
+  }
+
+  /* ---------- 事件 ---------- */
+  function bindTabs() {
+    var tabs = document.querySelectorAll('.tabs button');
+    tabs.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        tabs.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        state.cat = btn.getAttribute('data-cat');
+        renderGrid();
+      });
+    });
+    var filters = document.querySelectorAll('#filters button');
+    filters.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        filters.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        state.filter = btn.getAttribute('data-g');
+        renderGrid();
+      });
+    });
+  }
+
+  function bindGrid() {
+    grid.addEventListener('click', function (e) {
+      var cell = e.target.closest('.cell');
+      if (!cell) return;
+      var it = find(catList(state.cat), cell.getAttribute('data-id'));
+      if (!it) return;
+      state[state.cat] = it;
+      renderStage(); renderGrid(); showInfo(it);
+    });
+    grid.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      var cell = e.target.closest('.cell');
+      if (!cell) return;
+      e.preventDefault();
+      cell.click();
+    });
+  }
+
+  function applyDefaults() {
+    var d = DEFAULTS[state.gender];
+    state.hair = find(WD.HAIRS, d.hair);
+    state.outfit = find(WD.OUTFITS, d.outfit);
+    state.shoe = find(WD.SHOES, d.shoe);
+  }
+
+  function bindModelSwitch() {
+    var boy = document.getElementById('btnBoy'), girl = document.getElementById('btnGirl');
+    boy.addEventListener('click', function () {
+      if (state.gender === 'boy') return;
+      state.gender = 'boy';
+      boy.classList.add('active'); girl.classList.remove('active');
+      applyDefaults(); renderStage(); renderGrid(); showInfo(state.outfit);
+    });
+    girl.addEventListener('click', function () {
+      if (state.gender === 'girl') return;
+      state.gender = 'girl';
+      girl.classList.add('active'); boy.classList.remove('active');
+      applyDefaults(); renderStage(); renderGrid(); showInfo(state.outfit);
+    });
+  }
+
+  function bindActions() {
+    document.getElementById('btnRandom').addEventListener('click', function () {
+      var hairs = state.filter === 'all' ? WD.HAIRS : WD.HAIRS.filter(function (h) { return h.gender === state.filter; });
+      var outfits = state.filter === 'all' ? WD.OUTFITS : WD.OUTFITS.filter(function (o) { return o.gender === state.filter; });
+      if (!hairs.length) hairs = WD.HAIRS;
+      if (!outfits.length) outfits = WD.OUTFITS;
+      state.hair = hairs[Math.floor(Math.random() * hairs.length)];
+      state.outfit = outfits[Math.floor(Math.random() * outfits.length)];
+      state.shoe = WD.SHOES[Math.floor(Math.random() * WD.SHOES.length)];
+      renderStage(); renderGrid();
+      showInfo(state.outfit);
+    });
+    document.getElementById('btnReset').addEventListener('click', function () {
+      applyDefaults(); renderStage(); renderGrid(); showInfo(state.outfit);
+    });
+    document.getElementById('btnSave').addEventListener('click', savePNG);
+  }
+
+  function savePNG() {
+    var clone = stage.cloneNode(true);
+    clone.setAttribute('width', '840');
+    clone.setAttribute('height', '1360');
+    clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    var xml = new XMLSerializer().serializeToString(clone);
+    var img = new Image();
+    img.onload = function () {
+      var cv = document.createElement('canvas');
+      cv.width = 840; cv.height = 1360;
+      var ctx = cv.getContext('2d');
+      ctx.fillStyle = '#f7f0e1';
+      ctx.fillRect(0, 0, 840, 1360);
+      ctx.drawImage(img, 0, 0, 840, 1360);
+      var a = document.createElement('a');
+      a.download = '民国校服换装馆-' + (state.outfit ? state.outfit.name : '搭配') + '.png';
+      a.href = cv.toDataURL('image/png');
+      document.body.appendChild(a); a.click(); a.remove();
+    };
+    img.onerror = function () { alert('图片生成失败，请重试'); };
+    img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(xml);
+  }
+
+  /* ---------- 初始化 ---------- */
+  function init() {
+    document.querySelector('.tabs button[data-cat="hair"]').textContent = '发型 ' + WD.HAIRS.length;
+    document.querySelector('.tabs button[data-cat="outfit"]').textContent = '衣服 ' + WD.OUTFITS.length;
+    document.querySelector('.tabs button[data-cat="shoe"]').textContent = '鞋子 ' + WD.SHOES.length;
+    applyDefaults();
+    bindTabs(); bindGrid(); bindModelSwitch(); bindActions();
+    renderStage(); renderGrid();
+    showInfo(state.outfit);
+  }
+  init();
+})();
+
+</script>
+</body>
+</html>
